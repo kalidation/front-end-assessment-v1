@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import {Button, Form, FormFeedback, FormGroup, Input, Label} from 'reactstrap';
 import {getMultiSelected, repeat} from '../../../utils';
 import {isCategoriesValid, isNameValid} from './validators';
-import {createProductForm} from '../../../actions/products';
-import { connect } from 'react-redux';
 
 export const ProductForm = ({onSave, categories: AllCategories, product = {}}) => {
     const [name, setName] = useState(product.name || '');
@@ -29,10 +27,6 @@ export const ProductForm = ({onSave, categories: AllCategories, product = {}}) =
             featured,
         });
     }
-
-    useEffect(() => {
-        console.log("selectedCategories", categories);
-    },[categories])
 
     return (
         <Form onSubmit={onSubmit}>
@@ -86,11 +80,10 @@ export const ProductForm = ({onSave, categories: AllCategories, product = {}}) =
                     onChange={({target}) => setCategories(getMultiSelected(target))}
                 >
                     {AllCategories.map(({ id, name }) => {
-                        console.log("name", name);
                         return (
                             <option key={id} value={id}>{name}</option>
                         ) 
-                    } )}
+                    })}
                 </Input>
                 <FormFeedback>A product must have from 1 to 5 categories</FormFeedback>
             </FormGroup>
