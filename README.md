@@ -4,7 +4,10 @@
 
   - Changed the node version from 16 to 20 due to my syteme, need an admin to change it so i just specified that i use 20 version.
   - Downgrade history package's version from 5 to 4 due to the incompatibility with React Router Dom 5 and "createHashHistory".
-  - I added some comments in the code to help understand what changes have been made
+  - Npm intall all the packages.
+  - Start the project, check the console log, navigate through the project and try to find bugs.
+  - Analyse the source code, architecture and folder structure.
+  - Start debbuging.
 
 ## 2. Bugs found
 
@@ -24,7 +27,11 @@
 
 ## 4. Suggestions
 
-  The upgrade suggestions are just listed to this project, it does not take into consideration large scale projects when it is difficult to refactor all the project. 
+  The upgrade suggestions are just listed to this project, it does not take into consideration large scale projects when it is difficult to refactor all the project.
+
+  I also added so commonets in the code to understand some changes.
+
+  Very well let's start and list all the suggestions:
 
   - Upgrade React Router dom to version 6 and redux to redux toolkit rather then downgrade to history 4.
   - Upgrade redux to "redux toolkit" because the create store of redux is depcrated and it is recommanded to use redux toolkit unstead (By the offical documentation),
