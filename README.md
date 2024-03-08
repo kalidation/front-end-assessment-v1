@@ -24,6 +24,8 @@
 
 ## 4. Suggestions
 
+  The upgrade suggestions are just listed to this project, it does not take into consideration large scale projects when it is difficult to refactor all the project. 
+
   - Upgrade React Router dom to version 6 and redux to redux toolkit rather then downgrade to history 4.
   - Upgrade redux to "redux toolkit" because the create store of redux is depcrated and it is recommanded to use redux toolkit unstead (By the offical documentation),
   the side effect of inject navigation in redux is an old practice after the release of toolkit.
