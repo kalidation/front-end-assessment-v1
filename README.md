@@ -41,3 +41,4 @@
   - Extract the render of "ProductList" outside the JSX return in a "render fuction" to avoid using 2 nested mapping in JSX.
   - In the "ProductForm" i would create a generic component for an "Input" and use it as a common Component avoiding the repitition code, after it use an array of the Inputs props.
   - I would also use a render function and extract the mapping render of the product categories in "Product" Component.
+  - Add a validation function for expiration data, that it should be greater than reciept data and vice versa.
